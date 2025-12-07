@@ -1,0 +1,2 @@
+Demo Admin static asset sample.
+You can fetch this via GET /sample-banner.txt when the dev server is running.

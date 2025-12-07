@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600&display=swap");
+
+:root {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0f172a;
+  background-color: #f7f9fc;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.branding {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.branding h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.branding small {
+  color: #64748b;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #2563eb, #6366f1);
+  display: inline-block;
+}
+
+.app-nav {
+  display: inline-flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.app-nav a {
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0f172a;
+  background: #e2e8f0;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: background 120ms ease, transform 120ms ease;
+}
+
+.app-nav a:hover {
+  transform: translateY(-1px);
+}
+
+.app-nav a.active {
+  background: linear-gradient(120deg, #2563eb, #6366f1);
+  color: white;
+  border-color: #c7d2fe;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.narrow {
+  max-width: 440px;
+  margin: 80px auto;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label span {
+  font-weight: 600;
+  color: #475569;
+}
+
+input,
+button,
+select {
+  font: inherit;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(120deg, #2563eb, #6366f1);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button.ghost {
+  background: transparent;
+  color: #0f172a;
+  box-shadow: none;
+  border: 1px solid #e2e8f0;
+}
+
+button.danger {
+  color: #ef4444;
+  border-color: #fecdd3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.error {
+  color: #b91c1c;
+  background: #fee2e2;
+  border: 1px solid #fecdd3;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+}
+
+.pill input {
+  pointer-events: none;
+}
+
+.pill.active {
+  background: #e0e7ff;
+  border-color: #c7d2fe;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 14px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
