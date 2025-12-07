@@ -1,0 +1,22 @@
+= Demo Admin API 명세
+:toc: left
+:toclevels: 2
+:sectnums:
+:source-highlighter: highlightjs
+
+이 문서는 Spring REST Docs로 생성된 스니펫을 기반으로 합니다.
+
+== 인증
+
+=== 로그인
+`POST /api/auth/login`
+
+요청/응답 예시는 아래 스니펫을 참고하세요.
+
+include::{snippets}/auth-login/http-request.adoc[]
+
+include::{snippets}/auth-login/request-fields.adoc[]
+
+include::{snippets}/auth-login/http-response.adoc[]
+
+include::{snippets}/auth-login/response-fields.adoc[]

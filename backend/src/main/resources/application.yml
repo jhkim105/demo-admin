@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: "Y2hhbmdlLW1lLXBsZWFzZS12ZXJ5LXNlY3JldC1rZXk="
+    expiration-minutes: 120
