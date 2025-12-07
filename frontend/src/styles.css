@@ -105,7 +105,7 @@ main {
 }
 
 .narrow {
-  max-width: 440px;
+  width: clamp(420px, 60vw, 640px);
   margin: 80px auto;
 }
 
